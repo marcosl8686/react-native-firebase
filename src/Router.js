@@ -12,7 +12,7 @@ const RouterComponent = () => {
 					<Scene key='login' component={LoginForm} title="Please Login" initial />
 				</Scene>
 				<Scene key='main'>
-					<Scene rightTitle="Add" onRight={() => { Actions.employeeCreate()}} key='EmployeeList' component={EmployeeList} title="Employee List" />
+					<Scene key='EmployeeList' rightTitle="Add" onRight={() => { Actions.employeeCreate()}}  component={EmployeeList} title="Employee List" />
 					<Scene key='employeeCreate' component={EmployeeCreate} title="Create Employee" />
 				</Scene>
 			</Scene>

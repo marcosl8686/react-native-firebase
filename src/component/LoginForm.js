@@ -43,10 +43,10 @@ class LoginForm extends Component {
     return (
       <Card>
         <CardSection>
-          <Input label="Email" placeHolder="email@gmail.com" onChangeText={this.onEmailChange.bind(this)} value={this.props.email} />
+          <Input label="Email" placeholder="email@gmail.com" onChangeText={this.onEmailChange.bind(this)} value={this.props.email} />
         </CardSection>
          <CardSection>
-          <Input secureTextEntry label="Password" placeHolder="password" onChangeText={this.onPasswordChange.bind(this)} value={this.props.password} />
+          <Input secureTextEntry label="Password" placeholder="password" onChangeText={this.onPasswordChange.bind(this)} value={this.props.password} />
         </CardSection>
         {this.renderError()}
          <CardSection>
